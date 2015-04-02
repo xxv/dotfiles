@@ -1,0 +1,23 @@
+[color]
+	ui = auto
+[diff]
+	renames = true
+	algorithm = patience
+[merge]
+# this conflicts with meld    conflictstyle = diff3
+	tool = meld
+[push]
+	default = upstream
+	recurse-submodules = check
+[core]
+	excludesfile = ~/.gitignore
+	whitespace = trailing-space,space-before-tab,tab-in-indent,tabwidth=4
+[user]
+	name = Steve Pomeroy
+	email = stevep@thelevelup.com
+[log]
+	decorate=short
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[credential]
+	helper = cache --timeout=3600
