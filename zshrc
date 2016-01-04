@@ -1,3 +1,4 @@
+########################## Stock zsh stuff ###########################
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -7,6 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
 
+# Used by agnoster
 DEFAULT_USER=steve
 
 # Example aliases
@@ -40,24 +42,23 @@ zbell_ignore=(more less view sudo bash zsh $EDITOR $PAGER man run-help ssh mosh 
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=/home/steve/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+export PATH=/home/steve/bin:/home/steve/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 
-# my customizations below
-#
+######################## my customizations ###########################
 # zsh options
 setopt dvorak correct extended_glob
 # really, who wants this‽
 unsetopt correct_all
 
-# some variables
+# My env preferences
 export EMAIL='steve@staticfree.info'
 export EDITOR=vim
 export LESS='-j4 -R -i'
-export GREP_OPTIONS='--color=auto'
 
 # aliases
 alias l='ls -lAhB'
 alias ll='ls -lah'
+alias lt='ls -lAhBtr'
 alias g-o='gnome-open'
 alias dictfr='dict -h localhost -d fd-fra-eng'
 
@@ -69,6 +70,9 @@ alias gmfo='git merge --ff-only'
 alias gpfo='git pull --ff-only'
 alias grom='git rebase -i origin/master'
 alias gsur='git submodule update --recursive'
+alias glg='git log --stat --max-count=50'
+alias glgg='git log --graph --max-count=50'
+
 
 # git annex
 alias gx='git annex'
@@ -79,7 +83,6 @@ alias gxlih='git annex list --in here'
 alias node=nodejs
 
 # various
-
 alias exif_strip='exiftool -all='
 
 ############################## Java ##################################
@@ -115,6 +118,10 @@ export PERL5LIB=/home/steve/perl5/lib/perl5
 export PERL_LOCAL_LIB_ROOT="/home/steve/perl5"
 export PERL_MM_OPT=INSTALL_BASE="/home/steve/perl5"
 export PERL_MB_OPT="--install_base \"/home/steve/perl5\""
+
+export PATH="$HOME/.local/bin:$PATH"
+
+export KISYS3DMOD=/usr/local/share/kicad/modules/packages3d
 
 # Load in private information
 source ~/.zsh_private
