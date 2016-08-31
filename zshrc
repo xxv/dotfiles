@@ -102,6 +102,9 @@ export _JAVA_AWT_WM_NONREPARENTING=true
 export ANDROID_HOME=~/android/sdk/
 export PATH=$PATH:$HOME/android/sdk/platform-tools:$HOME/android/sdk/tools
 
+# Android Studio
+export STUDIO_JDK=/usr/lib/jvm/java-8-openjdk-amd64/
+
 ############################ Project ~/p/ ############################
 p() { cd ~/p/$1; }
 compctl -g '~/p/*(:s@'$HOME'/p/@@)' p
