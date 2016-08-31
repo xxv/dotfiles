@@ -38,7 +38,7 @@ DISABLE_AUTO_UPDATE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(ant django git sudo virtualenv zbell)
 
-zbell_ignore=(more less view sudo bash zsh $EDITOR $PAGER man run-help ssh mosh emacs vim ipython top glg gdc gst grom)
+zbell_ignore=(more less view sudo bash zsh $EDITOR $PAGER man run-help ssh mosh emacs vim ipython ipython3 top gap gd gdc glg gst grom units openscad)
 
 source $ZSH/oh-my-zsh.sh
 
