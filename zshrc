@@ -64,6 +64,7 @@ alias dictfr='dict -h localhost -d fd-fra-eng'
 
 # git aliases
 alias gbr='git branch -vv'
+alias gch='git show-ref --head --hash "^HEAD$" 1>&2 | tr -d "\n" | xclip -in'
 alias gdc='git diff --cached'
 alias gfa='git fetch --all -p'
 alias gmfo='git merge --ff-only'
