@@ -1,0 +1,6 @@
+*.pyc
+*\~
+*~
+*un~
+*.swp
+atlassian-ide-plugin.xml
