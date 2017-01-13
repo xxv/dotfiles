@@ -42,7 +42,7 @@ zbell_ignore=(more less view sudo bash zsh $EDITOR $PAGER man run-help ssh mosh 
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=/home/steve/bin:/home/steve/work/projects/clip2url/bin:/home/steve/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 
 ######################## my customizations ###########################
 # zsh options
@@ -129,3 +129,6 @@ export KISYS3DMOD=/usr/local/share/kicad/modules/packages3d
 
 # Load in private information
 source ~/.zsh_private
+
+# Load in profile paths
+source ~/.profile
