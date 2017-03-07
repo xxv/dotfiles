@@ -115,6 +115,14 @@ compctl -g '~/work/projects/*(:s@'$HOME'/work/projects/@@)' project
 alias prj=project
 ######################################################################
 
+tmp() {
+    dir="${HOME}/tmp/$(date '+%Y-%m-%d_%H%m%S')"
+    mkdir "${dir}" && \
+        cd "${dir}"
+}
+
+######################################################################
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
