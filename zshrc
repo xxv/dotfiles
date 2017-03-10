@@ -36,9 +36,13 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(ant django git sudo virtualenv zbell)
+plugins=(ant django git sudo virtualenv zbell zproject)
+
+#autoload -U compinit && compinit
 
 zbell_ignore=(more less view sudo bash zsh $EDITOR $PAGER man run-help ssh mosh emacs vim ipython ipython3 top gap gd gdc glg gst grom units openscad)
+
+zproject_path=$HOME/work/projects
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,9 +114,8 @@ export STUDIO_JDK=/usr/lib/jvm/java-8-openjdk-amd64/
 p() { cd ~/p/$1; }
 compctl -g '~/p/*(:s@'$HOME'/p/@@)' p
 
-project() { cd ~/work/projects/$1; }
-compctl -g '~/work/projects/*(:s@'$HOME'/work/projects/@@)' project
 alias prj=project
+
 ######################################################################
 
 tmp() {
