@@ -9,6 +9,7 @@ set autoindent
 
 " Going to try it again 2017-09-21
 set mouse=a
+set clipboard=unnamedplus
 
 " First make sure nothing is written to ~/.viminfo while editing
 " an encrypted file.
@@ -33,15 +34,8 @@ autocmd BufRead      *.lua set shiftwidth=4
 autocmd BufRead      *.lua set tabstop=8
 autocmd BufRead      *.lua set softtabstop=4
 
-function Syntastic_Py2()
-  let g:syntastic_python_python_exec = '/usr/bin/python2'
-endfunction
-
-function Syntastic_Py3()
-  let g:syntastic_python_python_exec = '/usr/bin/python3'
-endfunction
-
-call Syntastic_Py3()
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " arduino flavour
 autocmd BufRead      *.ino set tabstop=2
@@ -93,8 +87,8 @@ set showmatch
 set hlsearch
 set ttyfast
 set lazyredraw " to speed up laggy scrolling
-set number
 set relativenumber
+set number
 
 " for encrypted files, ensure that the undo history doesn't leak data
 
