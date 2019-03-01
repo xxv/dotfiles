@@ -91,6 +91,7 @@ alias node=nodejs
 
 # various
 alias exif_strip='exiftool -all='
+alias ag='ag --pager=less --hidden --ignore .git/'
 
 ############################## Java ##################################
 # work-around for a bug in Java and how it interplays with Awesome:
