@@ -73,11 +73,13 @@ alias gdc='git diff --cached'
 alias gfa='git fetch --all -p'
 alias gmfo='git merge --ff-only'
 alias gpfo='git pull --ff-only'
+alias grhp='git reset HEAD -p'
 alias grom='git rebase -i origin/master'
 alias gsur='git submodule update --recursive'
 alias glg='git log --stat --max-count=50'
 alias glgg='git log --graph --max-count=50'
-
+alias grl='git reflog --relative-date'
+unalias gl
 
 # git annex
 alias gx='git annex'
