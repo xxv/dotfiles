@@ -139,7 +139,7 @@ export PERL_MB_OPT="--install_base \"/home/steve/perl5\""
 
 export PATH="$HOME/.local/bin:$PATH"
 
-export KISYS3DMOD=/usr/local/share/kicad/modules/packages3d
+export KISYS3DMOD=/usr/share/kicad/modules/packages3d
 
 # Load in private information
 source ~/.zsh_private
