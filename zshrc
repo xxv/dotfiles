@@ -129,7 +129,7 @@ tmp() {
 
 ######################################################################
 
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/usr/rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 export PERL5LIB=/home/steve/perl5/lib/perl5
