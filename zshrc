@@ -100,7 +100,7 @@ export AWT_TOOLKIT=MToolkit
 # sadly, the sun JVM is much faster
 # export JAVA_HOME=/usr/lib/jvm/j2sdk1.6-oracle/
 # ... and also much older. Gotta ditch it.
-export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64/
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64/
 
 # Makes java stuff work with Awesome. See bug #508650.
 export _JAVA_AWT_WM_NONREPARENTING=true
