@@ -1,0 +1,103 @@
+[terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+foreground-color='rgb(131,148,150)'
+visible-name='Steve'
+palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(94,94,94)', 'rgb(203,75,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
+cursor-background-color='rgb(255,0,0)'
+use-system-font=false
+cursor-colors-set=true
+use-theme-colors=false
+cursor-foreground-color='rgb(0,0,0)'
+font='Monospace 9'
+cursor-blink-mode='off'
+background-color='rgb(0,43,54)'
+scrollbar-policy='never'
+
+[terminal/legacy]
+schema-version=uint32 3
+theme-variant='dark'
+default-show-menubar=false
+
+[settings-daemon/plugins/color]
+night-light-schedule-automatic=false
+night-light-schedule-to=7.0
+night-light-schedule-from=23.0
+night-light-enabled=true
+
+[settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
+www='<Primary><Super>space'
+screenshot=''
+home='<Shift><Super>space'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='<Super>MonBrightnessUp'
+command='/home/steve/bin/workbench_light on'
+name='Workbench Light On'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>MonBrightnessDown'
+command='/home/steve/bin/workbench_light off'
+name='Workbench Light Off'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>space'
+command='gnome-terminal'
+name='Terminal'
+
+[shell]
+enabled-extensions=['workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'alternate-tab@gnome-shell-extensions.gcampax.github.com']
+
+[shell/extensions/window-list]
+grouping-mode='auto'
+show-on-all-monitors=false
+
+[shell/window-switcher]
+app-icon-mode='both'
+
+[desktop/interface]
+font-name='Cantarell 9'
+document-font-name='Sans 9'
+show-battery-percentage=false
+monospace-font-name='Monospace 9'
+enable-animations=false
+gtk-theme='Adwaita-dark'
+clock-show-date=true
+
+[desktop/wm/preferences]
+mouse-button-modifier='<Super>'
+focus-mode='sloppy'
+num-workspaces=9
+titlebar-font='Cantarell Bold 9'
+workspace-names=['sys', 'mail', 'music', 'w1', 'w2', 'w3', 'chat', 'web', 'w4']
+
+[desktop/wm/keybindings]
+switch-to-workspace-9=['<Super>e']
+switch-to-workspace-4=['<Super>apostrophe']
+close=['<Alt>F4', '<Super><Shift>c']
+move-to-workspace-1=['<Shift><Super>exclam']
+move-to-workspace-2=['<Shift><Super>at']
+move-to-workspace-3=['<Shift><Super>numbersign']
+move-to-workspace-4=['<Shift><Super>quotedbl']
+move-to-workspace-5=['<Super><Shift>comma']
+move-to-workspace-6=['<Super><Shift>period']
+cycle-windows=['<Super>f']
+cycle-windows-backward=['<Super>b']
+move-to-workspace-8=['<Super><Shift>o']
+move-to-workspace-7=['<Super><Shift>a']
+switch-to-workspace-1=['<Super>1']
+move-to-workspace-9=['<Super><Shift>e']
+switch-to-workspace-3=['<Super>3']
+switch-input-source=@as []
+switch-to-workspace-5=['<Super>Comma']
+switch-to-workspace-6=['<Super>Period']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-8=['<Super>o']
+switch-input-source-backward=@as []
+switch-to-workspace-7=['<Super>a']
+
+[desktop/input-sources]
+sources=[('xkb', 'us+dvorak'), ('xkb', 'us')]
+xkb-options=['ctrl:nocaps', 'compose:ralt']
+
+[mutter]
+dynamic-workspaces=false
