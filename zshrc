@@ -93,6 +93,9 @@ alias node=nodejs
 alias exif_strip='exiftool -all='
 alias ag='ag --pager=less --hidden --ignore .git/'
 
+
+zstyle ':completion:*' file-sort date-reverse
+
 ############################## Java ##################################
 # work-around for a bug in Java and how it interplays with Awesome:
 export AWT_TOOLKIT=MToolkit
