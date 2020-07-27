@@ -63,7 +63,7 @@ export LESS='-j4 -R -i'
 alias l='ls -lAhB'
 alias ll='ls -lah'
 alias lt='ls -lAhBtr'
-alias g-o='gnome-open'
+alias open='xdg-open'
 alias dictfr='dict -h localhost -d fd-fra-eng'
 
 # git aliases
