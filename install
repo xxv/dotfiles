@@ -1,0 +1,12 @@
+#!/bin/sh
+
+files="gitconfig gitignore vimrc zshrc"
+
+for file in $files; do
+  dest=~/.$file
+  if [ -e $dest ]; then
+    echo "$dest already exists. Skipping"
+  else
+    ln -s "$(readlink -f $file)" $dest
+  fi
+done
