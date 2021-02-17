@@ -51,6 +51,9 @@ enabled-extensions=['workspace-indicator@gnome-shell-extensions.gcampax.github.c
 grouping-mode='auto'
 show-on-all-monitors=false
 
+[shell/keybindings]
+toggle-application-view=['<Super>r']
+
 [shell/window-switcher]
 app-icon-mode='both'
 
