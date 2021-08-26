@@ -1,0 +1,21 @@
+#!/bin/sh
+
+echo "installing necessary OS dependencies..."
+sudo apt install git zsh fonts-powerline
+
+oh_my_zsh="${HOME}/.oh-my-zsh"
+zproject="${oh_my_zsh}/custom/plugins/zproject"
+
+if [ ! -d "${oh_my_zsh}" ]; then
+	echo "Installing oh-my-zsh..."
+	git clone https://github.com/ohmyzsh/ohmyzsh.git "${oh_my_zsh}"
+else
+	echo "Already have oh-my-zsh."
+fi
+
+if [ ! -d "${zproject}" ]; then
+	echo "Installing zproject..."
+	git clone git@github.com:xxv/zproject.git "${zproject}"
+else
+	echo "Already have zproject."
+fi
