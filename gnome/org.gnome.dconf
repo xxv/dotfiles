@@ -52,6 +52,9 @@ grouping-mode='auto'
 show-on-all-monitors=false
 
 [shell/keybindings]
+switch-to-application-1=['<Ctrl><Super>1']
+switch-to-application-2=['<Ctrl><Super>2']
+switch-to-application-3=['<Ctrl><Super>3']
 toggle-application-view=['<Super>r']
 
 [shell/window-switcher]
