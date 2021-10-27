@@ -14,7 +14,7 @@
 	whitespace = trailing-space,space-before-tab,tab-in-indent,tabwidth=4
 [user]
 	name = Steve Pomeroy
-	email = stevep@thelevelup.com
+	email = steve@staticfree.info
 [log]
 	decorate=short
 [alias]
