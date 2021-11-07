@@ -16,7 +16,7 @@ DISABLE_AUTO_UPDATE="true"
 
 # plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(django git sudo virtualenv zbell zproject zsh-autosuggestions)
+plugins=(git sudo virtualenv zbell zproject zsh-autosuggestions)
 
 # don't ding on these long-running processes
 zbell_ignore=(ag more less view sudo bash zsh $EDITOR $PAGER man run-help ssh mosh emacs vim ipython ipython3 top gap gc gd gdc glg gst grom units openscad)
