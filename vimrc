@@ -110,7 +110,8 @@ let g:solarized_visibility="high"    "default value is normal
 colorscheme solarized
 
 :highlight ExtraWhitespace ctermbg=red guibg=red
-
+:highlight clear SpellBad
+:highlight SpellBad cterm=underline ctermfg=red
 
 " Show trailing whitespace and spaces before a tab:
 :match ExtraWhitespace /\s\+$\| \+\ze\t\|[^\t]\zs\t\+/
