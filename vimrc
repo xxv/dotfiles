@@ -1,5 +1,7 @@
 call pathogen#infect()
 
+packadd! gnupg
+
 filetype plugin on
 "filetype indent on
 filetype plugin indent on
