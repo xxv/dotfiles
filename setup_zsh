@@ -27,3 +27,5 @@ if [ ! -d "${autosuggestions}" ]; then
 else
 	echo "Already have autosuggestions."
 fi
+
+touch "${HOME}/.zsh_private"
