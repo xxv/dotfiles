@@ -10,3 +10,5 @@ for file in $files; do
     ln -s "$(readlink -f $file)" $dest
   fi
 done
+
+cd gnome/ && ./load.sh
