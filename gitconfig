@@ -7,7 +7,7 @@
 # this conflicts with meld    conflictstyle = diff3
 	tool = meld
 [push]
-	default = upstream
+	default = simple
 	recurse-submodules = check
 [core]
 	excludesfile = ~/.gitignore
